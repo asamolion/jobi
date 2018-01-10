@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,600,700,800");
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800,900");
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700,900");
+
+// fonts
+$Lato: 'Lato', 'Arial', 'Helvetica';
+
+// colors
+$bg: #F3E7E6;
+$yellow: #fee44d;
+$blue: #0300F9;
+
+body {
+    background-color: $bg;
+}
+
+#root {
+    width: 100%;
+}
+
+.header {
+    width: 100%;
+    .yellow-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+	font-size: 10px;
+        height: 50px;
+	width: 50px;
+        background-color: $yellow;
+        border-radius: 50%;
+        margin: 50px;
+
+    }
+    .yellow-icon:nth-child(2) {
+        position: absolute;
+        right: 50px;
+    }
+    .mobile-heading {
+	color: $blue;
+	display: block;
+	font-family: 'Raleway', sans-serif;
+	font-weight: bold;
+	font-size: 80px;
+	letter-spacing: 10px;
+	margin: 70px 70px 70px 0px;
+    }
+    .logo-container {
+	text-align: center;
+	.logo {
+	    height: 100px;
+	    margin: 40px 0;
+	}
+    }
+}
+
+.content {
+    h1, h2, h3 {
+	color: $blue;
+	font-family: $Lato;
+	text-align: center;
+    }
+}
+
+.input-field {
+    border-radius: 25px;
+    margin: 20px 0;
+    text-align: center;
+    padding: 20px;
+}
+
+.checkbox-container {
+    padding: 20px 0 20px 60px;
+    .checkbox-label {
+	position: absolute;
+    }
+}
+
+.btn-container {
+    margin: 20px 0;
+    text-align: center;
+    font-family: $Lato;
+    .btn {
+	background-color: $blue;
+	border-radius: 25px;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin: 20px 0;
+	width: 20%;
+	height: 50px;
+    }
+}
+

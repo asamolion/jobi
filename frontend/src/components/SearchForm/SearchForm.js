@@ -1,5 +1,5 @@
 import React from 'react';
-import SearchInput from '../SearchInput/SearchInput.jsx';
+import SearchInput from '../SearchInput/SearchInput';
 
 export default class SearchForm extends React.Component {
     render() {
