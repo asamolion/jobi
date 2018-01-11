@@ -3,7 +3,6 @@ import MaskedInput from 'react-text-mask';
 import Checkbox from 'rc-checkbox';
 import emailMask from 'text-mask-addons/dist/emailMask'
 import createNumberMask from 'text-mask-addons/dist/createNumberMask'
-import { Form, Text } from 'react-form';
 
 let numberMask = createNumberMask({
 		    prefix: '',
