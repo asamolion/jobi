@@ -10,6 +10,7 @@ $Lato: 'Lato', 'Arial', 'Helvetica';
 $bg: #F3E7E6;
 $yellow: #fee44d;
 $blue: #0300F9;
+$grey: #9e95e0;
 
 body {
     background-color: $bg;
@@ -79,6 +80,44 @@ body {
 		height: 60px;
 		width: 100%;
 		margin: 10px;
+	    }
+	}
+    }
+
+    &.job-search-form {
+	margin: 0;
+	text-align: center;
+	color: $blue;
+
+	h1 {
+	    color: $grey;
+	    font-family: $Lato;
+	    font-size: 70px;
+	    font-weight: 700;
+	    line-height: normal;
+	    text-align: center;
+	}
+
+	.search-field {
+	    color: $blue;
+	    display: inline-block;
+	    font-family: $Lato;
+	    background: transparent;
+	    border: none;
+	    margin: 5px;
+	    padding: 0 2px;
+
+	    &#keyword {
+		width: 400px;
+	    }
+	    &#location {
+		width: 250px;
+	    }
+	    &#job_type {
+		width: 350px;
+	    }
+	    &::placeholder {
+		color: $blue;
 	    }
 	}
     }

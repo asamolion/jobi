@@ -1,9 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,600,700,800");
-@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800,900");
-@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700,900");
-
-#keyword{
+@import url(https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,600,700,800);@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700);@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800,900);@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700,900);#keyword{
     width: 265px;
 }
 
@@ -531,11 +526,11 @@ a:hover {
 }
 /* line 379, ../sass/app.scss */
 .job-post .job-title h3 i:hover:before {
-  content: "\f004";
+  content: "\F004";
 }
 /* line 384, ../sass/app.scss */
 .job-post .job-title h3 i.liked:before {
-  content: "\f004";
+  content: "\F004";
 }
 /* line 390, ../sass/app.scss */
 .job-post .job-title span {
@@ -726,7 +721,7 @@ a:hover {
 }
 /* line 551, ../sass/app.scss */
 .job-slider .slick-prev.slick-arrow:before {
-  content: "\f053";
+  content: "\F053";
   text-align: center;
   font: normal normal normal 14px/1 FontAwesome;
 }
@@ -752,7 +747,7 @@ a:hover {
 }
 /* line 577, ../sass/app.scss */
 .job-slider .slick-next.slick-arrow:before {
-  content: "\f054";
+  content: "\F054";
   text-align: center;
   font: normal normal normal 14px/1 FontAwesome;
 }
@@ -1366,5 +1361,5 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 @media (min-height: 700px) {
-  ...
+  
 }

@@ -78,6 +78,7 @@ typings/
 
 # editor
 .vscode
+*.swp
 
 # custom secret file
 secret.py
