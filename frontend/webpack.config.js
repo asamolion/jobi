@@ -1,5 +1,6 @@
 const path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     entry: './src/index.js',
@@ -47,6 +48,10 @@ module.exports = {
 	historyApiFallback: true
     },
     plugins: [
-	new ExtractTextPlugin('./styles.css')
+	new ExtractTextPlugin('./styles.css'),
+	new HtmlWebpackPlugin({
+	    title: 'Jobi React',
+	    template: './src/index.html'
+	})
     ]
 }
