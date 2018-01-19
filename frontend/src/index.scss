@@ -63,6 +63,7 @@ body {
 }
 
 .content {
+    height: 100vh;
     h1, h2, h3 {
 	color: $blue;
 	font-family: $Lato;
@@ -194,12 +195,21 @@ body {
     }
     .copyright-container {
 	background-color: $blue;
-	padding: 70px 0 0;
+	padding: 70px;
 	color: $lightwhite;
 	text-align: center;
+
 	.footer-logo {
 	    height: 150px;
 	    width: 150px;
+	    margin-bottom: 50px;
+	}
+	p {
+	    font-family: $Lato;
+	    font-size: 20px;
+	    a {
+		color: $lightwhite;
+	    }
 	}
     }
 }
