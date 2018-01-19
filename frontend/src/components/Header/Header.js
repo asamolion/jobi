@@ -1,4 +1,5 @@
-import React, { Component } from 'react'; import FontAwesome from 'react-fontawesome';
+import React, { Component } from 'react';
+import FontAwesome from 'react-fontawesome';
 import logo from './logo.jpg';
 
 class Header extends Component {

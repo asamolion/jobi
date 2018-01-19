@@ -18,6 +18,10 @@ $lightwhite: #FDFDFD;
     text-align: center;
 }
 
+.bold {
+    font-weight: bold;
+}
+
 body {
     background-color: $bg;
 }
@@ -63,7 +67,6 @@ body {
 }
 
 .content {
-    height: 100vh;
     h1, h2, h3 {
 	color: $blue;
 	font-family: $Lato;
@@ -91,40 +94,85 @@ body {
 	}
     }
 
-    &.job-search-form {
-	margin: 0;
-	text-align: center;
-	color: $blue;
-
-	h1 {
-	    color: $grey;
-	    font-family: $Lato;
-	    font-size: 70px;
-	    font-weight: 700;
-	    line-height: normal;
+    &.search-container {
+	.job-search-form {
+	    margin: 0;
 	    text-align: center;
-	}
-
-	.search-field {
 	    color: $blue;
-	    display: inline-block;
-	    font-family: $Lato;
-	    background: transparent;
-	    border: none;
-	    margin: 5px;
-	    padding: 0 2px;
+	    height: 90vh;
+	    h1 {
+		color: $grey;
+		font-family: $Lato;
+		font-size: 70px;
+		font-weight: 700;
+		line-height: normal;
+		text-align: center;
+	    }
 
-	    &#keyword {
-		width: 400px;
-	    }
-	    &#location {
-		width: 250px;
-	    }
-	    &#job_type {
-		width: 350px;
-	    }
-	    &::placeholder {
+	    .search-field {
 		color: $blue;
+		display: inline-block;
+		font-family: $Lato;
+		background: transparent;
+		border: none;
+		margin: 5px;
+		padding: 0 2px;
+		outline: none;
+
+		&#keyword {
+		    width: 400px;
+		}
+		&#location {
+		    width: 250px;
+		}
+		&#job_type {
+		    width: 350px;
+		}
+		&::placeholder {
+		    color: $blue;
+		}
+	    }
+	}
+	.search-results {
+	    background-color: $lightwhite;
+	    padding: 20px;
+	    .job-post {
+		background-color: $bg;
+		color: $blue;
+		font-family: $Lato;
+		font-size: 25px;
+		font-weight: 300;
+		margin: 20px;
+		.job-heading {
+		    display: flex;
+		    justify-content: space-between;
+		    border-bottom: 1px solid $blue;
+		    padding: 20px 20px 15px;
+		    .heading {
+			display: inline-block;
+			padding: 0 10px 0 10px;
+			border-right: 1px solid $blue;
+		    }
+		    .fa {
+			padding-left: 10px;
+		    }
+		    .time-posted {
+			font-size: 15px;
+		    }
+		}
+		.job-description {
+		    padding: 20px;
+		}
+	    }
+	    .bookmarked {
+		background-color: $blue;
+		color: $lightwhite;
+		.job-heading {
+		    border-color: $grey;
+		    .heading {
+			border-color: $lightwhite;
+		    }
+		}
 	    }
 	}
     }
