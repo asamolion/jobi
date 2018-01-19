@@ -11,6 +11,12 @@ $bg: #F3E7E6;
 $yellow: #fee44d;
 $blue: #0300F9;
 $grey: #9e95e0;
+$lightwhite: #FDFDFD;
+
+// global classes
+.center-align {
+    text-align: center;
+}
 
 body {
     background-color: $bg;
@@ -154,6 +160,47 @@ body {
 	margin: 20px 0;
 	width: 20%;
 	height: 50px;
+    }
+}
+
+.footer {
+    .newsletter-container {
+	background-color: $lightwhite;
+	font-family: $Lato;
+	padding: 50px 0;
+	color: $blue;
+	h2 {
+	    font-weight: bold;
+	}
+	p {
+	    font-size: 30px;
+	    font-weight: 300;
+	}
+	.row {
+	    margin: 0;
+	}
+	.input-container {
+	    display: flex;
+	    justify-content: center;
+	    width: 100%;
+	    margin: 50px 0 0;
+	    .input-field {
+		display: block;
+		margin: 10px;
+		height: 50px;
+		width: 400px;
+	    }
+	}
+    }
+    .copyright-container {
+	background-color: $blue;
+	padding: 70px 0 0;
+	color: $lightwhite;
+	text-align: center;
+	.footer-logo {
+	    height: 150px;
+	    width: 150px;
+	}
     }
 }
 
