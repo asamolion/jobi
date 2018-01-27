@@ -1,0 +1,87 @@
+@media only screen and (max-width: 768px) {
+    .header {
+        .yellow-icon {
+            font-size: 15px;
+            height: 70px;
+            width: 70px;
+            margin: 20px;
+        }
+        .mobile-title {
+            color: $blue;
+            font-family: $Roboto;
+            font-size: 40px;
+            text-align: right;
+            position: relative;
+            top: 10px;
+        }
+    }
+    .content {
+        padding: 20px;
+        &.search-container {
+            .job-search-form {
+                padding-top: 0;
+                p {
+                    font-size: 12px;
+                    text-align: center;
+                }
+                .main-text {
+                    text-align: left;
+                    font-size: 50px;
+                }
+                .search-field {
+                    width: 100%;
+                    margin: 0;
+                    padding: 0;
+                    &#keyword {
+                        width: 100%;
+                    }
+                    &#location {
+                        width: 100%;
+                    }
+                    &#job_type {
+                        width: 100%;
+                    }
+                }
+                .submit-button {
+                    margin: 20px;
+                }
+            }
+        }
+    }
+
+    .footer {
+        .newsletter-container {
+            padding: 80px 20px;
+            h2.center-align {
+                font-size: 45px;
+                font-weight: 800;
+            }
+            .input-container {
+                flex-direction: column;
+                align-items: center;
+                .input-field {
+                    border-radius: 50px;
+                    height: 70px;
+                    width: 90%;
+                }
+            }
+            .btn-container {
+                display: flex;
+                justify-content: center;
+                margin: 0;
+                width: 100%;
+                .btn {
+                    border-radius: 50px;
+                    display: block;
+                    height: 70px;
+                    width: 90%;
+                }
+            }
+        }
+        .copyright-container {
+
+        }
+    }
+}
+
+

@@ -3,17 +3,21 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800,900");
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400,700,900");
 
-// fonts
+/* fonts */
+$Raleway: 'Raleway', 'Arial', 'Helvetica';
+$Roboto: 'Roboto', 'Arial', 'Helvetica';
+$OpenSans: 'Open Sans', 'Arial', 'Helvetica';
 $Lato: 'Lato', 'Arial', 'Helvetica';
 
-// colors
+
+/* colors */
 $bg: #F3E7E6;
-$yellow: #fee44d;
+$yellow: #FEE44D;
 $blue: #0300F9;
-$grey: #9e95e0;
+$grey: #9E95E0;
 $lightwhite: #FDFDFD;
 
-// global classes
+/* global classes */
 .center-align {
     text-align: center;
 }
@@ -36,9 +40,9 @@ body {
         display: flex;
         align-items: center;
         justify-content: center;
-	font-size: 10px;
+        font-size: 10px;
         height: 50px;
-	width: 50px;
+        width: 50px;
         background-color: $yellow;
         border-radius: 50%;
         margin: 50px;
@@ -49,132 +53,130 @@ body {
         right: 50px;
     }
     .mobile-heading {
-	color: $blue;
-	display: block;
-	font-family: 'Raleway', sans-serif;
-	font-weight: bold;
-	font-size: 80px;
-	letter-spacing: 10px;
-	margin: 70px 70px 70px 0px;
+        color: $blue;
+        display: block;
+        font-family: 'Raleway', sans-serif;
+        font-weight: bold;
+        font-size: 80px;
+        letter-spacing: 10px;
+        margin: 70px 70px 70px 0px;
     }
     .logo-container {
-	text-align: center;
-	.logo {
-	    height: 100px;
-	    margin: 40px 0;
-	}
+        text-align: center;
+        .logo {
+            height: 100px;
+            margin: 40px 0;
+        }
     }
 }
 
 .content {
     h1, h2, h3 {
-	color: $blue;
-	font-family: $Lato;
-	text-align: center;
+        color: $blue;
+        font-family: $Lato;
+        text-align: center;
     }
 
     &.login {
-	.input-field {
-	    border-radius: 30px;
-	    display: block;
-	    margin: 30px auto;
-	    height: 60px;
-	    width: 95%;
-	}
+        .input-field {
+            border-radius: 30px;
+            display: block;
+            margin: 30px auto;
+            height: 60px;
+            width: 95%;
+        }
 
-	.btn-container {
-	    width: 95%;
-	    text-align: center;
-	    .btn {
-		border-radius: 30px;
-		height: 60px;
-		width: 100%;
-		margin: 10px;
-	    }
-	}
+        .btn-container {
+            width: 95%;
+            text-align: center;
+            .btn {
+                border-radius: 30px;
+                height: 60px;
+                width: 100%;
+                margin: 10px;
+            }
+        }
     }
 
     &.search-container {
-	.job-search-form {
-	    margin: 0;
-	    text-align: center;
-	    color: $blue;
-	    height: 90vh;
-	    h1 {
-		color: $grey;
-		font-family: $Lato;
-		font-size: 70px;
-		font-weight: 700;
-		line-height: normal;
-		text-align: center;
-	    }
+        .job-search-form {
+            margin: 0;
+            text-align: center;
+            color: $blue;
+            padding: 70px 0;
+            .main-text {
+                color: $grey;
+                font-family: $Lato;
+                font-size: 70px;
+                font-weight: 700;
+                line-height: normal;
+                margin: 0;
+            }
 
-	    .search-field {
-		color: $blue;
-		display: inline-block;
-		font-family: $Lato;
-		background: transparent;
-		border: none;
-		margin: 5px;
-		padding: 0 2px;
-		outline: none;
+            .search-field {
+                color: $blue;
+                background: transparent;
+                border: none;
+                margin: 5px;
+                padding: 0 2px;
+                outline: none;
 
-		&#keyword {
-		    width: 400px;
-		}
-		&#location {
-		    width: 250px;
-		}
-		&#job_type {
-		    width: 350px;
-		}
-		&::placeholder {
-		    color: $blue;
-		}
-	    }
-	}
-	.search-results {
-	    background-color: $lightwhite;
-	    padding: 20px;
-	    .job-post {
-		background-color: $bg;
-		color: $blue;
-		font-family: $Lato;
-		font-size: 25px;
-		font-weight: 300;
-		margin: 20px;
-		.job-heading {
-		    display: flex;
-		    justify-content: space-between;
-		    border-bottom: 1px solid $blue;
-		    padding: 20px 20px 15px;
-		    .heading {
-			display: inline-block;
-			padding: 0 10px 0 10px;
-			border-right: 1px solid $blue;
-		    }
-		    .fa {
-			padding-left: 10px;
-		    }
-		    .time-posted {
-			font-size: 15px;
-		    }
-		}
-		.job-description {
-		    padding: 20px;
-		}
-	    }
-	    .bookmarked {
-		background-color: $blue;
-		color: $lightwhite;
-		.job-heading {
-		    border-color: $grey;
-		    .heading {
-			border-color: $lightwhite;
-		    }
-		}
-	    }
-	}
+                &#keyword {
+                    width: 400px;
+                }
+                &#location {
+                    width: 250px;
+                }
+                &#job_type {
+                    width: 350px;
+                }
+                &::placeholder {
+                    color: $blue;
+                }
+            }
+        }
+        .search-results {
+            background-color: $lightwhite;
+            padding: 20px;
+            .job-post {
+                background-color: $bg;
+                color: $blue;
+                font-family: $Lato;
+                font-size: 25px;
+                font-weight: 300;
+                margin: 20px;
+                .job-heading {
+                    display: flex;
+                    justify-content: space-between;
+                    border-bottom: 1px solid $blue;
+                    padding: 20px 20px 15px;
+                    .heading {
+                        display: inline-block;
+                        padding: 0 10px 0 10px;
+                        border-right: 1px solid $blue;
+                    }
+                    .fa {
+                        padding-left: 10px;
+                    }
+                    .time-posted {
+                        font-size: 15px;
+                    }
+                }
+                .job-description {
+                    padding: 20px;
+                }
+            }
+            .bookmarked {
+                background-color: $blue;
+                color: $lightwhite;
+                .job-heading {
+                    border-color: $grey;
+                    .heading {
+                        border-color: $lightwhite;
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -193,7 +195,7 @@ body {
 .checkbox-container {
     padding: 20px 0 20px 60px;
     .checkbox-label {
-	position: absolute;
+        position: absolute;
     }
 }
 
@@ -202,63 +204,64 @@ body {
     text-align: center;
     font-family: $Lato;
     .btn {
-	background-color: $blue;
-	border-radius: 25px;
-	font-weight: bold;
-	text-transform: uppercase;
-	margin: 20px 0;
-	width: 20%;
-	height: 50px;
+        background-color: $blue;
+        border-radius: 25px;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin: 20px 0;
+        width: 20%;
+        height: 50px;
     }
 }
 
 .footer {
     .newsletter-container {
-	background-color: $lightwhite;
-	font-family: $Lato;
-	padding: 50px 0;
-	color: $blue;
-	h2 {
-	    font-weight: bold;
-	}
-	p {
-	    font-size: 30px;
-	    font-weight: 300;
-	}
-	.row {
-	    margin: 0;
-	}
-	.input-container {
-	    display: flex;
-	    justify-content: center;
-	    width: 100%;
-	    margin: 50px 0 0;
-	    .input-field {
-		display: block;
-		margin: 10px;
-		height: 50px;
-		width: 400px;
-	    }
-	}
+        background-color: $lightwhite;
+        font-family: $Lato;
+        padding: 50px 0;
+        color: $blue;
+        h2 {
+            font-weight: bold;
+        }
+        p {
+            font-size: 30px;
+            font-weight: 300;
+        }
+        .row {
+            margin: 0;
+        }
+        .input-container {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            margin: 50px 0 0;
+            .input-field {
+                display: block;
+                margin: 10px;
+                height: 50px;
+                width: 400px;
+            }
+        }
     }
     .copyright-container {
-	background-color: $blue;
-	padding: 70px;
-	color: $lightwhite;
-	text-align: center;
+        background-color: $blue;
+        padding: 70px;
+        color: $lightwhite;
+        text-align: center;
 
-	.footer-logo {
-	    height: 150px;
-	    width: 150px;
-	    margin-bottom: 50px;
-	}
-	p {
-	    font-family: $Lato;
-	    font-size: 20px;
-	    a {
-		color: $lightwhite;
-	    }
-	}
+        .footer-logo {
+            height: 150px;
+            width: 150px;
+            margin-bottom: 50px;
+        }
+        p {
+            font-family: $Lato;
+            font-size: 20px;
+            a {
+                color: $lightwhite;
+            }
+        }
     }
 }
 
+@import '_mobile.scss';
