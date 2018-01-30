@@ -98,14 +98,36 @@ body {
         }
     }
 
+    &.signup {
+        .input-field {
+            border-radius: 30px;
+            display: block;
+            margin: 30px auto;
+            height: 60px;
+            width: 95%;
+        }
+
+        .btn-container {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            .btn {
+                border-radius: 30px;
+                height: 60px;
+                margin: 10px;
+            }
+        }
+    }
+
     &.search-container {
         .job-search-form {
             margin: 0;
             text-align: center;
             color: $blue;
-            padding: 70px 0;
+            padding: 0 0 100px;
             .main-text {
                 color: $grey;
+                display: inline;
                 font-family: $Lato;
                 font-size: 70px;
                 font-weight: 700;
@@ -140,6 +162,7 @@ body {
             padding: 20px;
             .job-post {
                 background-color: $bg;
+                border-radius: 5px;
                 color: $blue;
                 font-family: $Lato;
                 font-size: 25px;
@@ -163,7 +186,12 @@ body {
                     }
                 }
                 .job-description {
-                    padding: 20px;
+                    p {
+                        padding: 20px;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                        white-space: nowrap;
+                   }
                 }
             }
             .bookmarked {
@@ -176,6 +204,15 @@ body {
                     }
                 }
             }
+        }
+    }
+    &.job-detail {
+        color: $blue;
+        font-family: $Lato;
+        font-weight: 300;
+        h1 {
+            text-align: left;
+            font-weight: inherit;
         }
     }
 }
@@ -213,36 +250,35 @@ body {
         height: 50px;
     }
 }
-
-.footer {
-    .newsletter-container {
-        background-color: $lightwhite;
-        font-family: $Lato;
-        padding: 50px 0;
-        color: $blue;
-        h2 {
-            font-weight: bold;
-        }
-        p {
-            font-size: 30px;
-            font-weight: 300;
-        }
-        .row {
-            margin: 0;
-        }
-        .input-container {
-            display: flex;
-            justify-content: center;
-            width: 100%;
-            margin: 50px 0 0;
-            .input-field {
-                display: block;
-                margin: 10px;
-                height: 50px;
-                width: 400px;
-            }
+.newsletter-container {
+    background-color: $lightwhite;
+    font-family: $Lato;
+    padding: 50px 0;
+    color: $blue;
+    h2 {
+        font-weight: bold;
+    }
+    p {
+        font-size: 30px;
+        font-weight: 300;
+    }
+    .row {
+        margin: 0;
+    }
+    .input-container {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin: 50px 0 0;
+        .input-field {
+            display: block;
+            margin: 10px;
+            height: 50px;
+            width: 400px;
         }
     }
+}
+.footer {
     .copyright-container {
         background-color: $blue;
         padding: 70px;

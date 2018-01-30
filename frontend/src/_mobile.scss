@@ -2,8 +2,8 @@
     .header {
         .yellow-icon {
             font-size: 15px;
-            height: 70px;
-            width: 70px;
+            height: 60px;
+            width: 60px;
             margin: 20px;
         }
         .mobile-title {
@@ -18,13 +18,15 @@
     .content {
         padding: 20px;
         &.search-container {
+            padding: 0;
             .job-search-form {
-                padding-top: 0;
+                padding: 0 20px 0;
                 p {
                     font-size: 12px;
                     text-align: center;
                 }
                 .main-text {
+                    display: inherit;
                     text-align: left;
                     font-size: 50px;
                 }
@@ -45,43 +47,73 @@
                 .submit-button {
                     margin: 20px;
                 }
-            }
-        }
-    }
+           }
 
-    .footer {
-        .newsletter-container {
-            padding: 80px 20px;
-            h2.center-align {
-                font-size: 45px;
-                font-weight: 800;
-            }
-            .input-container {
-                flex-direction: column;
-                align-items: center;
-                .input-field {
-                    border-radius: 50px;
-                    height: 70px;
-                    width: 90%;
-                }
-            }
-            .btn-container {
-                display: flex;
-                justify-content: center;
-                margin: 0;
-                width: 100%;
-                .btn {
-                    border-radius: 50px;
-                    display: block;
-                    height: 70px;
-                    width: 90%;
-                }
-            }
-        }
-        .copyright-container {
+           .search-results {
+               .job-post {
+                   font-size: 20px;
+                   .job-heading {
+                       padding: 15px 5px 15px;
+                   }
+                   .job-description {
+                       p {
+                           text-overflow: ellipsis;
+                           overflow: hidden;
+                           white-space: normal;
+                           padding: 20px;
+                       }
+                       p.small {
+                           padding-top: 0;
+                       }
+                   }
+               }
+           }
+       }
 
-        }
-    }
+       &.signup {
+           .input-field {
+               height: 60px;
+               border-radius: 50px;
+           }
+           .btn-container {
+               display: flex;
+               justify-content: center;
+               .btn {
+                   width: 85%;
+                   margin: 10px;
+               }
+           }
+       }
+   }
+
+   .newsletter-container {
+       padding: 80px 20px;
+       h2.center-align {
+           font-size: 45px;
+           font-weight: 800;
+       }
+       .input-container {
+           flex-direction: column;
+           align-items: center;
+           .input-field {
+               border-radius: 50px;
+               height: 70px;
+               width: 90%;
+           }
+       }
+       .btn-container {
+           display: flex;
+           justify-content: center;
+           margin: 0;
+           width: 100%;
+           .btn {
+               border-radius: 50px;
+               display: block;
+               height: 70px;
+               width: 90%;
+           }
+       }
+   }
 }
 
 

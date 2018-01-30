@@ -18,7 +18,7 @@ class SearchForm extends React.Component {
                         name='keyword'
                     />
                     <datalist id="role-datalist"></datalist>
-                    <br />
+                    <br className='hidden-xs hidden-sm' />
                     <h1 className='main-text'>looking for a job in</h1>
                     <MaskedInput
                         mask={false}
@@ -28,7 +28,7 @@ class SearchForm extends React.Component {
                         name='location'
                     />
                     <datalist id="location-datalist"></datalist>
-                    <br />
+                    <br className='hidden-xs hidden-sm' />
                     <h1 className='main-text'>as a</h1>
                     <MaskedInput
                         mask={false}
@@ -38,7 +38,7 @@ class SearchForm extends React.Component {
                         name='job_type'
                     />
                     <datalist id="type-datalist"></datalist>
-                    <br />
+                    <br className='hidden-xs hidden-sm' />
                     <input type="submit" value="SUBMIT" className="submit-button btn btn-default" />
                 </form>
             </div>

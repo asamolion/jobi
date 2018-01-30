@@ -15,11 +15,11 @@ class Header extends Component {
                     <div className='logo-container col-sm-6 hidden-xs hidden-sm'>
                         <img className='logo' src={logo} alt='Jobi logo' />
                     </div>
-                    <div className='col-xs-6 col-sm-3'>
+                    <div className='col-xs-6 col-sm-3 pull-right'>
                         <div className='yellow-icon pull-right hidden-xs hidden-sm'>
                             <FontAwesome name='user' size='2x' />
                         </div>
-                        <h3 className='mobile-title'>JOBI</h3>
+                        <h3 className='mobile-title hidden-md hidden-lg'>JOBI</h3>
                     </div>
                 </div>
             </header>
