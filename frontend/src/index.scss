@@ -77,6 +77,41 @@ body {
         text-align: center;
     }
 
+    &.about {
+        background-color: $blue;
+        position: absolute;
+        top:0;
+        left:0;
+        height: 100%;
+        width: 100%;
+        .container {
+            display: flex;
+            align-items: center;
+            height: 100%;
+            .row {
+                width: 100%;
+            }
+        }
+        h1 {
+            color: $lightwhite;
+            text-align: left;
+        }
+
+        .tab-list {
+            list-style-type: none;
+            .tab {
+                color: $lightwhite;
+                font-family: $OpenSans;
+                font-size: 70px;
+                font-weight: 900;
+            }
+            .tab span:hover {
+                text-decoration: underline;
+                cursor: pointer;
+            }
+        }
+    }
+
     &.login {
         .input-field {
             border-radius: 30px;
@@ -191,7 +226,7 @@ body {
                         text-overflow: ellipsis;
                         overflow: hidden;
                         white-space: nowrap;
-                   }
+                    }
                 }
             }
             .bookmarked {
